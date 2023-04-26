@@ -54,6 +54,15 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/theprimeagen/packer.lua<CR>")
 -- vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomation make_it_rain<CR>")
 
+-- Path autocomplete, use (Ctrl-x,Ctrl-f) to show options
+vim.keymap.set("i", "<C-f>", "<C-x><C-f>")
+
+-- Show file buffer (open / unsaved(+) / etc)
+vim.keymap.set("n", "<leader>ls", ":ls<CR>")
+
+-- Show unsaved changes in buffered file
+vim.keymap.set("n", "<leader>wd", ":w !diff % -<CR>")
+
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
