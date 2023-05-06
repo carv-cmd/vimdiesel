@@ -11,11 +11,12 @@ require'nvim-treesitter.configs'.setup {
         "yaml",
         "vim",
         "vimdoc",
-        "html",
-        "css",
-        "javascript",
         "markdown",
         "dockerfile",
+        "javascript",
+        "typescript",
+        "html",
+        "css",
         "query"
     },
 
