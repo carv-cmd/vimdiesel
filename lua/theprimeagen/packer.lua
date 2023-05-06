@@ -22,6 +22,8 @@ return require('packer').startup(function(use)
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
+    use('windwp/nvim-ts-autotag')
+    -- use('iamcco/markdown-preview.nvim')
 
     use {
         "folke/todo-comments.nvim",
