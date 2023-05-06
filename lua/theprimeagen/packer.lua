@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('windwp/nvim-ts-autotag')
+    use("laytan/cloak.nvim")
     -- use('iamcco/markdown-preview.nvim')
 
     use {
