@@ -63,6 +63,12 @@ vim.keymap.set("n", "<leader>ls", ":ls<CR>")
 -- Show unsaved changes in buffered file
 vim.keymap.set("n", "<leader>wd", ":w !diff % -<CR>")
 
+-- Lazy saving; shortcut for ':w'
+vim.keymap.set("n", "<leader>ww", ":w <CR>")
+
+-- Run :lua ColorMeRose()
+vim.keymap.set("n", "<leader>cmr", ":lua ColorMeRose() <CR>")
+
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
