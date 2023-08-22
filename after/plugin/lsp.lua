@@ -4,7 +4,14 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
     'pyright',
-    'tsserver'
+    'bashls',
+    'tsserver',
+    'eslint',
+    'perlnavigator',
+    'lua_ls',
+    'nginx-language-server',
+    'docker_compose_language_service',
+    'dockerls'
 })
 
 local cmp = require('cmp')
