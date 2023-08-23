@@ -9,9 +9,9 @@ lsp.ensure_installed({
     'eslint',
     'perlnavigator',
     'lua_ls',
-    'nginx-language-server',
     'docker_compose_language_service',
     'dockerls'
+    -- 'nginx-language-server',
 })
 
 local cmp = require('cmp')
