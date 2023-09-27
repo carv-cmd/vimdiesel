@@ -22,8 +22,18 @@ return require('packer').startup(function(use)
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
+    use('laytan/cloak.nvim')
     use('windwp/nvim-ts-autotag')
-    use("laytan/cloak.nvim")
+    use('windwp/nvim-autopairs')
+    use('anuvyklack/pretty-fold.nvim')
+    -- use('anuvyklack/fold-preview.nvim')
+    -- use {
+    --     'anuvyklack/fold-preview.nvim',
+    --     requires = 'anuvyklack/keymap-amend.nvim',
+    --     config = function()
+    --         require('fold-preview').setup({})
+    --     end
+    -- }
     -- use('iamcco/markdown-preview.nvim')
 
     use {
