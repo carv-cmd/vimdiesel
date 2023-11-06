@@ -1,3 +1,7 @@
+require("mason").setup {
+    log_level = vim.log.levels.DEBUG
+}
+
 local lsp = require('lsp-zero')
 
 lsp.preset("recommended")
