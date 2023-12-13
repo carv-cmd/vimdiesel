@@ -8,5 +8,10 @@ vim.keymap.set("n", '<C-p>', builtin.git_files, {})
 vim.keymap.set("n", '<leader>ps', function()
 	builtin.grep_string({ search = vim.fn.input("Grep > ") });
 end)
+
+-- Show git commit history
 vim.keymap.set("n", '<leader>gc', builtin.git_commits, {})
+
+-- Show git status
+vim.keymap.set("n", '<leader>gs', builtin.git_status, {})
 
