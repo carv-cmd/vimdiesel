@@ -1,3 +1,8 @@
+-- Standard Remaps --
+-- <C-o> => Navigate to previous location in jump list
+-- <C-i> => Navigate to next location in jump list
+-- --------------- --
+
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -65,6 +70,18 @@ vim.keymap.set("n", "<leader>wd", ":w !diff % -<CR>")
 
 -- Lazy saving; shortcut for ':w'
 vim.keymap.set("n", "<leader>ww", ":w <CR>")
+
+-- UPPERCASE word shorthand
+vim.keymap.set("n", "<leader>gup", "gU")
+
+-- lowercase word shorthand
+vim.keymap.set("n", "<leader>glo", "gu")
+
+-- close all currently open buffers
+vim.keymap.set("n", "<leader>bd", ":up | %bd | e# <CR>")
+
+-- Folding (":h folding" for help)
+-- vim.keymap.set("n", "<leader>fo", "")
 
 -- Run :lua ColorMeRose()
 vim.keymap.set("n", "<leader>cmr", ":lua ColorMeRose() <CR>")
